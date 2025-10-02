@@ -37,68 +37,102 @@
 </head>
 
 <body>
+  
+  
+  <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 nav-bg"></div>
+        </div>
 
+        <div class="row">
+            <div class="col-lg-3 col-md-4 menu-bg">
+                <h4 class="text-white mt-3 p-2">Menú Lateral</h4>
+                </div>
+            
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    <div class="col-12 banner-bg">
+                        <h2 class="text-white">Operaciones Matemáticas Fundamentales</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 body-bg">
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-5 border p-3 bg-light rounded shadow-sm">
+                                <h4>Calculadora Simple</h4>
+                                
+                                <div class="mb-3">
+                                    <label for="numero1" class="form-label">Número 1:</label>
+                                    <input type="number" class="form-control" id="numero1" name="numero1" placeholder="Primer valor" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="operacion" class="form-label">Operación:</label>
+                                    <select class="form-select" id="operacion" name="operacion" required>
+                                        <option value="suma">Suma (+)</option>
+                                        <option value="resta">Resta (-)</option>
+                                        <option value="multiplicacion">Multiplicación (x)</option>
+                                        <option value="division">División (/)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="numero2" class="form-label">Número 2:</label>
+                                    <input type="number" class="form-control" id="numero2" name="numero2" placeholder="Segundo valor" required>
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary w-100" id="calcularBtn">Calcular</button>
+                                
+                                <hr>
+                                
+                                <div class="mt-3">
+                                    <label for="resultado" class="form-label">Resultado:</label>
+                                    <input type="text" class="form-control bg-white" id="resultado" name="resultado" readonly placeholder="Esperando cálculo...">
+                                </div>
+                            </div>
 
+                            <div class="col-md-7">
+                                <h3>Fundamentos de las Operaciones Aritméticas</h3>
+                                <p>Las cuatro operaciones fundamentales constituyen la base de la **Aritmética**, la rama de las matemáticas que estudia los números y las operaciones elementales realizadas con ellos:</p>
+                                
+                                <dl>
+                                    <dt>Suma (Adición)</dt>
+                                    <dd>Es la operación binaria que combina dos o más números (**sumandos**) para obtener una cantidad final o total (**suma**). Se define como el proceso de agregar colecciones de objetos. Su propiedad principal es la **conmutatividad** y la **asociatividad**.</dd>
+                                    
+                                    <dt>Resta (Sustracción)</dt>
+                                    <dd>Es la operación inversa a la suma, que consiste en quitar una cantidad (**sustraendo**) de otra (**minuendo**) para encontrar la diferencia (**resto**). La resta no es conmutativa ni asociativa, ya que el orden de los términos sí altera el resultado.</dd>
+                                    
+                                    <dt>Multiplicación</dt>
+                                    <dd>Es una operación binaria que establece una suma abreviada, donde un número se suma a sí mismo tantas veces como indica el otro número, resultando en un **producto**. Es conmutativa, asociativa y cumple con la propiedad **distributiva**.</dd>
+                                    
+                                    <dt>División</dt>
+                                    <dd>Es la operación inversa a la multiplicación. Consiste en determinar cuántas veces está contenido un número (**divisor**) en otro (**dividendo**), arrojando un **cociente**. Es crucial recordar que la división por cero es una operación **indefinida** en el campo real.</dd>
+                                </dl>
+                            </div>
+                        </div>
 
- <div class="container-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- Navegación -->
-
-  <div class="row">
-
-   <div class="col-12 nav-bg"></div>
-
-  </div>
-
-
-
-  <!-- Menú lateral y contenido -->
-
-  <div class="row">
-
-   <div class="col-3 menu-bg"></div>
-
-   <div class="col-9">
-
-    <div class="row">
-
-     <div class="col-12 banner-bg"></div>
-
+        <div class="row">
+            <div class="col-12 footer-bg"></div>
+        </div>
     </div>
 
-    <div class="row">
-
-     <div class="col-12 body-bg"></div>
-
-    </div>
-
-   </div>
-
-  </div>
-
-
-
-  <!-- Footer -->
-
-  <div class="row">
-
-   <div class="col-12 footer-bg"></div>
-
-  </div>
-
- </div>
-
-
-
- <!-- Sección para scripts JavaScript -->
-
- <script>
-
-  // Aquí irán tus funciones JavaScript para pruebas con Jasmine
-
- </script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // La lógica de las operaciones se conectará a los siguientes elementos:
+        // Input Número 1: id="numero1"
+        // Combobox Operación: id="operacion"
+        // Input Número 2: id="numero2"
+        // Botón: id="calcularBtn"
+        // Input Resultado: id="resultado"
+    </script>
 
 </body>
 
