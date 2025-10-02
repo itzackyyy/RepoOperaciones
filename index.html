@@ -3,16 +3,17 @@
 <html lang="es">
 
 <head>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
  <title>Operaciones matemáticas</title>
 
  <h1 class="TituloPrincipal">La calculadora más flipante</h1>
 
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
  <style>
 
@@ -24,7 +25,7 @@
 
   .body-bg { background-color: #f8f9fa; height: 300px; }
 
-  .footer-bg { background-color: #343a40; height: 60px; }
+  .footer-bg { background-color: #fbfdff; height: 60px; }
 
   .TituloPrincipal {
     display: flex;
@@ -114,27 +115,88 @@
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+ <div class="container-fluid">
+
+  <!-- Navegación -->
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+
+  <!-- Menú lateral y contenido -->
+
+  <div class="row">
+
+   <div class="col-3 menu-bg"></div>
+
+   <div class="col-9">
+
+    <div class="row">
+
+     <div class="col-12 banner-bg"></div>
 
         <div class="row">
             <div class="col-12 footer-bg"></div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // La lógica de las operaciones se conectará a los siguientes elementos:
-        // Input Número 1: id="numero1"
-        // Combobox Operación: id="operacion"
-        // Input Número 2: id="numero2"
-        // Botón: id="calcularBtn"
-        // Input Resultado: id="resultado"
-    </script>
+    <div class="row">
+
+     <div class="col-12 body-bg"></div>
+
+    </div>
+
+   </div>
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+  <div class="row">
+
+    <footer class="col-12 footer-bg"> 
+        <p>&copy; Todos los derechos reservados para ...</p>
+    </footer>
+   
+
+  </div>
+
+ </div>
+
+
+
+ <!-- Sección para scripts JavaScript -->
+
+ <script>
+
+  // Aquí irán tus funciones JavaScript para pruebas con Jasmine
+
+ </script>
+
+
 
 </body>
+
 
 </html>
 
